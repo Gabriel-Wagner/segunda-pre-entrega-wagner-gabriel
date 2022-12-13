@@ -33,6 +33,91 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+footer {
+  margin-top: 5rem;
+}
+
+.footer__img {
+  width: 2rem;
+  margin: 0.9rem;
+}
+
+#formulario-contacto fieldset {
+  background-color: rgba(136, 78, 78, 0.1);
+  display: inline;
+  padding: 2rem;
+}
+
+#formulario-contacto legend {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  text-align: center;
+}
+
+#formulario-contacto div {
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.card {
+  border: solid 0.2rem rgba(107, 106, 106, 0.3);
+  display: inline-block;
+  padding: 0.5rem;
+  margin-right: 1.5rem;
+  border-radius: 1rem;
+}
+
+.card:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.card__parrafo {
+  font-style: italic;
+  color: rgb(255, 0, 0);
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.card__img {
+  width: 20rem;
+  border-radius: 1rem;
+}
+
+#galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 2rem;
+  margin-top: 6rem;
+  row-gap: 2rem;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 525px) {
+  #galeria {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 330px) {
+  #galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 nav {
   margin-top: 0.5rem;
   margin-bottom: 6rem;
@@ -82,10 +167,6 @@ nav {
     margin-top: 3rem;
   }
 }
-ul {
-  list-style: none;
-}
-
 #header-flex {
   display: flex;
   justify-content: space-around;
@@ -103,71 +184,9 @@ ul {
   transform: translateY(-5PX);
 }
 
-p {
-  margin-bottom: 1.5rem;
-}
-
-#formulario-contacto fieldset {
-  background-color: rgba(136, 78, 78, 0.1);
-  display: inline;
-  padding: 2rem;
-}
-
-#formulario-contacto legend {
-  font-size: 1.5rem;
-  font-weight: bolder;
-  text-align: center;
-}
-
-#formulario-contacto div {
-  margin-bottom: 1rem;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 3rem;
-}
-
 .historia__parrafo {
   font-weight: 700;
   font-style: italic;
-}
-
-footer {
-  margin-top: 5rem;
-}
-
-.card {
-  border: solid 0.2rem rgba(107, 106, 106, 0.3);
-  display: inline-block;
-  padding: 0.5rem;
-  margin-right: 1.5rem;
-  border-radius: 1rem;
-}
-
-.card:hover {
-  transform: scale(1.1, 1.1);
-}
-
-.card__parrafo {
-  font-style: italic;
-  color: rgb(255, 0, 0);
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin-top: 2rem;
-  text-align: center;
-}
-
-.card__img {
-  width: 20rem;
-  border-radius: 1rem;
-}
-
-.footer__img {
-  width: 2rem;
-  margin: 0.9rem;
 }
 
 .inicio__imagenes {
@@ -195,25 +214,6 @@ div.inicio__imagenes {
   justify-self: center;
 }
 
-#galeria {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin-bottom: 2rem;
-  margin-top: 6rem;
-  row-gap: 2rem;
-}
-
-/*MEDIA QUERIES*/
-@media screen and (max-width: 525px) {
-  #galeria {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media screen and (max-width: 330px) {
-  #galeria {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 div#body-index {
   display: grid;
   grid-template-areas: "header" "parrafoPrincipal" "inicioImagenes" "parrafoSecundario" "footer";
@@ -251,9 +251,6 @@ footer {
   grid-area: footer;
 }
 
-/*.border{
-    border: solid 1px black;
-}*/
 .mapa {
   display: flex;
   justify-content: center;
